@@ -1,0 +1,18 @@
+def prime(p):
+    flag = True
+    if p == 1:
+        flag = False
+    for i in range(2,p):
+        if p % i == 0:
+            flag = False
+            break
+    return flag
+
+
+
+def PrimeSum(m, n):
+    sum = 0
+    for i in range(m, n + 1):
+        if prime(i):
+           sum += i
+    return sum
