@@ -1,3 +1,12 @@
+# 基本思路
+def fn(a, n):
+    sum = 0
+    for i in range(1, n + 1):
+        for j in range(i):
+            sum += a * 10 ** j
+    return sum
+
+#利用字符串
 def fn(a, n):
     sum = 0
     for i in range(1, n + 1):
